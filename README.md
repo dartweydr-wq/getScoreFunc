@@ -1,1 +1,1 @@
-# getScoreFunc
+Разработайте функцию getScore(offset), которая вернет счет на момент offset.
