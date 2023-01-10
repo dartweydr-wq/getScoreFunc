@@ -74,7 +74,7 @@ func getScore(scores *[]ScoreStamp, offset int) Score {
 
 func main() {
 	arr := *fillScores()
-	gS := getScore(&arr, 51000)
+	gS := getScore(&arr, 45000)
 
 	fmt.Println(gS)
 }
