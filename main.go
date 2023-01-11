@@ -61,15 +61,10 @@ func fillScores() *[]ScoreStamp {
 }
 
 func getScore(scores *[]ScoreStamp, offset int) Score {
+	sc := *scores
+	val := sc[offset]
 
-	for _, val := range *scores {
-
-		if offset == val.Offset {
-			return val.Score
-		}
-	}
-
-	return Score{Home: 0, Away: 0}
+	return val.Score
 }
 
 func main() {
