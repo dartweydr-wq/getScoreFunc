@@ -8,7 +8,7 @@ import (
 
 const PROBABILITY_GOAL = 0.0001
 const PROBABILITY_FIRST_TEAM_GOAL = 0.55
-const STAMPS_NUMBER = 50000
+const STAMPS_NUMBER = 10
 
 type Score struct {
 	Home int
@@ -61,6 +61,7 @@ func fillScores() *[]ScoreStamp {
 }
 
 func getScore(scores *[]ScoreStamp, offset int) Score {
+	fmt.Println(scores)
 	sc := *scores
 	val := sc[offset]
 
@@ -68,8 +69,8 @@ func getScore(scores *[]ScoreStamp, offset int) Score {
 }
 
 func main() {
-	arr := *fillScores()
-	gS := getScore(&arr, 45000)
+	arr := fillScores()
+	gS := getScore(arr, 45000)
 
 	fmt.Println(gS)
 }
