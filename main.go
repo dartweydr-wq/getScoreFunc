@@ -61,7 +61,6 @@ func fillScores() *[]ScoreStamp {
 }
 
 func getScore(scores *[]ScoreStamp, offset int) Score {
-	fmt.Println(scores)
 	sc := *scores
 	val := sc[offset]
 
