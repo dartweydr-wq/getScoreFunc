@@ -8,7 +8,7 @@ import (
 
 const PROBABILITY_GOAL = 0.0001
 const PROBABILITY_FIRST_TEAM_GOAL = 0.55
-const STAMPS_NUMBER = 10
+const STAMPS_NUMBER = 50000
 
 type Score struct {
 	Home int
